@@ -1,0 +1,40 @@
+/* Darker background to match Polytoria's look */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #1a1a2e;
+    --md-default-bg-color--light: #1f1f3a;
+}
+
+/* Header bar - solid blue like Polytoria */
+.md-header {
+    background-color: #1e88e5;
+}
+
+/* Brighter link colors */
+.md-typeset a {
+    color: #42a5f5;
+}
+
+/* Admonition styling to match Polytoria's warning/notice boxes */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+    border-color: #ff9800;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+    border-color: #00bcd4;
+}
+
+/* Code blocks */
+.md-typeset code {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.md-typeset table:not([class]) th {
+    background-color: rgba(30, 136, 229, 0.2);
+}

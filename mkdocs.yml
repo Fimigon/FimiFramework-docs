@@ -1,0 +1,63 @@
+site_name: FimiFramework Documentation
+site_description: A Roblox Luau framework for structured service/controller architecture with built-in networking.
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: light blue
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/cog
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: guides/installation.md
+      - Project Structure: guides/project-structure.md
+      - Quick Start: guides/quick-start.md
+  - API Reference:
+      - Framework: api/framework.md
+      - Services: api/services.md
+      - Controllers: api/controllers.md
+      - Service Bridge: api/service-bridge.md
+      - Middleware: api/middleware.md
+      - Signal: api/signal.md
+  - Examples:
+      - Power System: examples/power-system.md
+      - Inter-Service Communication: examples/inter-service.md
+      - Inter-Controller Communication: examples/inter-controller.md
